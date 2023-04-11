@@ -1,0 +1,11 @@
+﻿@page "/"
+@attribute [Authorize]
+@inject IAccountService AccountService
+
+<div class="p-4">
+    <div class="container">
+        <h1>Bem Vindo @AccountService.User.FirstName!</h1>
+
+        <p><NavLink href="users">Gerenciamento de Contas</NavLink></p>
+    </div>
+</div>
